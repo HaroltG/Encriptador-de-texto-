@@ -236,21 +236,32 @@
 @media (max-width: 57.5em) {
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .encriptar {
-    width: 100%;
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .cuadro-salida {
+    width: 80%;
+    left: 7%;
+    top: 15%;
+    height: 10%;
   }
   .texto {
     width: 80%;
-    height: 60%;
-    left: 10%;
+    height: 29%;
+    left: 7%;
     top: 5%;
+    margin-bottom: 10px;
   }
   .terminos {
     width: 80%;
-    left: 10%;
-    top: 67%;
+    left: 23%;
+    top: 52%;
   }
   .terminos p {
     font-size: 16px;
@@ -258,7 +269,10 @@
   .botones {
     width: 80%;
     left: 10%;
-    top: 70%;
+    top: 55%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
   }
   .btn-encriptar,
   .btn-desencriptar {
@@ -273,17 +287,29 @@
   }
   .encriptado {
     width: 80%;
-    height: 15%;
-    left: 10%;
-    top: 80%;
+    height: 38%;
+    left: 8%;
+    top: 60%;
   }
   .mensaje-encriptado {
     width: 100%;
-    top: 5%;
+    top: 3%;
+  }
+  .mensaje-encriptado h2 {
+    font-size: 20px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    margin-bottom: 10px;
+  }
+
+  .mensaje-encriptado p {
+    font-size: 14px; /* Ajusta el tamaño del texto para mejor lectura */
+    margin-bottom: 10px;
   }
   .encriptado img {
-    top: 0;
-    display: none;
-    visibility: hidden;
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    max-width: 100%; /* Asegura que no se desborde del contenedor */
+    display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin-top: 100px;
   }
 }
